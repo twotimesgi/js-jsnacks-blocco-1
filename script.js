@@ -71,10 +71,16 @@ snack 6
 Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.
 
-let input = prompt("Inserisci un numero: ");
+let input = "";
 let res = 0;
+
+while(input.length != 4){
+    input = prompt("Inserisci un numero di 4 cifre: ");
+}
 for(let i = 0; i < input.length; i++){
     res = parseInt(res) + parseInt(input[i]);
-} 
+}
+
 console.log(res);
+
 */
