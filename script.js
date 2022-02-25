@@ -1,6 +1,8 @@
 /*
 snack 1
 
+ALTERNATIVA 1
+
 let input = [];
 
 input.push(parseInt(prompt("inserisci un numero!")));
@@ -8,6 +10,29 @@ input.push(parseInt(prompt("inserisci un numero!")));
 
 console.log(Math.max(...input));
 
+ALTERNATIVA 2 
+let a = prompt("inserisci un numero: ");
+let b = prompt("inserisci un numero: ");
+
+if(a!=b){
+    a > b ? console.log(a) : console.log(b);
+}else{
+    console.log("I numeri sono uguali!");
+}
+
+ALTERNATIVA 3
+let input = [];
+let max = 0;
+
+input.push(parseInt(prompt("inserisci un numero!")));
+input.push(parseInt(prompt("inserisci un numero!")));
+
+for(let i = 0; i<input.length; i++){
+    if(input[i] > max){
+        max = input[i];
+    }
+}
+console.log(max);
 */
 
 /*
@@ -27,7 +52,8 @@ if(input1.length > input2.length){
 }
 */
 
-/* 
+/*
+
 snack 3
 
 let sum = 0;
@@ -39,6 +65,7 @@ console.log(sum);
 
 /* 
 snack 4
+ALTERNATIVA 1
 
 let invitati = ["Marco","Luigi","Luca","Leonardo","Sara","Rosella"];
 let nome = prompt("Inserisci il tuo nome: ");
@@ -50,7 +77,17 @@ for(let i = 0; i < invitati.length; i++){
     }
 }
 invitato ? console.log(`Benvenuto ${nome}!`) : console.log("Non sei stato invitato.");
-*/
+
+ALTERNATIVA 2
+
+let invitati = ["Marco","Luigi","Luca","Leonardo","Sara","Rosella"];
+for(let i = 0; i < invitati.length; i++){
+    invitati[i] = invitati[i].toLowerCase();
+}
+
+let nome = prompt("Inserisci il tuo nome: ").toLowerCase();
+invitati.includes(nome) ? console.log(`Benvenuto ${nome}!`) : console.log("Non sei stato invitato!");
+ */
 
 /* 
 snack 5
@@ -67,9 +104,6 @@ console.log(array);
 
 /*
 snack 6
-
-Chiedi un numero di 4 cifre all’utente
-e calcola la somma di tutte le cifre che compongono il numero.
 
 let input = "";
 let res = 0;
