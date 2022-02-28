@@ -156,6 +156,7 @@ Snack 2.2
 Inserisci un numero, se è pari stampa il numero,
 se è dispari stampa il numero successivo
 
+
 let num = parseInt(prompt("Inserisci un numero"));
 if(num % 2 != 0) num = num + 1;
 console.log(num);
@@ -167,15 +168,17 @@ Snack 2.3
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 */
 
+
 let nomi = ["Gianni", "Marco", "Stefano", "Luigi","Riccarda","Claudia","Micaela","Alberto","Filippo","Lorena"];
 let cognomi = ["Rossi", "Verdi", "Bianchi", "Totti", "Salvini", "Berlusconi", "Prodi", "Putin","Di Maio"];
 let nome;
 let cognome;
 let invitati = [];
 
+
 while(invitati.length < 3){
-    nome = nomi[Math.floor()*(nomi.length - 1)];
-    cognome = cognomi[Math.floor()*(cognomi.length - 1)];
+    nome = nomi[Math.floor(Math.random()*(nomi.length))];
+    cognome = cognomi[Math.floor(Math.random()*(cognomi.length))];
 
     if(!invitati.includes(nome+" "+cognome)){
         invitati.push(nome+" "+cognome);
