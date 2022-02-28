@@ -123,7 +123,7 @@ console.log(res);
 Snack 1.9
 
 let i = 1;
-let somma;
+let somma = 0;
 while(i < 11){
     somma += i;
     i++;
