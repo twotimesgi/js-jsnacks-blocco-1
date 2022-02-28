@@ -118,3 +118,67 @@ for(let i = 0; i < input.length; i++){
 console.log(res);
 
 */
+
+/*
+Snack 1.9
+
+let i = 1;
+let somma;
+while(i < 11){
+    somma += i;
+    i++;
+}
+
+console.log("Somma: " + somma + ", Media: " + somma/i);
+*/
+
+/*
+Snack 2.1
+
+let somma = 0;
+for(let i = 0; i < 5; i++){
+    somma += parseInt(prompt("Inserisci un numero: "));
+}
+console.log(somma);
+
+
+let somma = 0;
+let i = 0;
+while(i < 5){
+    somma +=  parseInt(prompt("Inserisci un numero: "));
+    i++;
+}
+console.log(somma);
+*/
+
+/*
+Snack 2.2
+Inserisci un numero, se è pari stampa il numero,
+se è dispari stampa il numero successivo
+
+let num = parseInt(prompt("Inserisci un numero"));
+if(num % 2 != 0) num = num + 1;
+console.log(num);
+
+*/
+
+/*
+Snack 2.3
+Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
+*/
+
+let nomi = ["Gianni", "Marco", "Stefano", "Luigi","Riccarda","Claudia","Micaela","Alberto","Filippo","Lorena"];
+let cognomi = ["Rossi", "Verdi", "Bianchi", "Totti", "Salvini", "Berlusconi", "Prodi", "Putin","Di Maio"];
+let nome;
+let cognome;
+let invitati = [];
+
+while(invitati.length < 3){
+    nome = nomi[Math.floor()*(nomi.length - 1)];
+    cognome = cognomi[Math.floor()*(cognomi.length - 1)];
+
+    if(!invitati.includes(nome+" "+cognome)){
+        invitati.push(nome+" "+cognome);
+    }
+}
+console.log(invitati);
